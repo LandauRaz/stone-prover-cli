@@ -50,7 +50,7 @@ impl FromStr for Bootloader {
 #[command(args_conflicts_with_subcommands = true)]
 #[command(flatten_help = true)]
 pub struct ProveArgs {
-    #[clap(long = "with-bootloader", default_value_t = false)]
+    #[clap(long = "with-bootloader", default_value_t = true)]
     pub with_bootloader: bool,
 
     #[clap(long = "bootloader-version")]
